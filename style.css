@@ -1,181 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.head-title h3 {
+body h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+}
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-align: center;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  padding: 5% 0%;
+  background-image: url(images/IMG_2989.JPG);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.page-one,
-.page-two {
-  background-color: #fffafa;
-}
-.page-one h2 {
-  text-align: center;
-  text-transform: capitalize;
-  padding-bottom: 3%;
-  font-size: 2rem;
-}
-.page-one p {
-  margin: 0% 30%;
-  text-align: center;
-  height: 100%;
-}
-.sub-nav {
-  text-align: center;
-  margin: 7% 0%;
-  margin-bottom: 15%;
-}
-.sub-nav a {
-  border: 1px solid red;
-  width: 33%;
-  padding: 1% 2%;
-  margin-left: 3%;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-.linkA {
-  background-color: red;
-  color: white;
-}
-.linkA:hover {
-  cursor: pointer;
-  background-color: white;
-  color: red;
-}
-.linkB {
-  background-color: white;
-  color: red;
-}
-.linkB:hover {
-  cursor: pointer;
-  background-color: red;
-  color: white;
-}
-.page-two-head {
-  text-align: center;
-}
-.page-two-head h4 {
-  color: red;
-  font-size: 0.8rem;
-  text-transform: capitalize;
-  margin: 1%;
-}
-.page-two-head p {
-  font-size: 1.5rem;
-  margin: 0% 38%;
-  margin-bottom: 4%;
-}
-.tab {
+.secA {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin: 0% 35%;
+}
+.comp-logo {
+  width: 33%;
+}
+.cartnsearch {
+  width: 33%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
   width: 100%;
+  background-color: transparent;
+}
+.dropbtn {
+  cursor: pointer;
+  color: black;
+  padding: 3%;
+  font-size: 1rem;
+  background-color: #e68557;
+  border: none;
+}
+.dropdown-content {
+  background-color: gray;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  display: none;
+}
+.dropdown-content a {
+  color: white;
+  z-index: 1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+}
+.show {
+  display: block;
+}
+body img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: #dad3bd;
+}
+.page2 {
+  padding: 5%;
+}
+h1 {
+  padding-top: 12%;
+  padding-bottom: 5%;
+  font-size: 2.5rem;
+  font-family: great vibes;
+}
+.topic-nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+.pro-pic {
+  width: 25%;
+  height: auto;
+  padding-top: 3%;
+}
+.pro-pic img {
+  border-radius: 70px;
+  height: auto;
+  padding: 5%;
+}
+.name-title {
+  width: 75%;
+  padding: 5%;
+}
+.page2 p {
+  font-size: 1.5rem;
+}
+.sec-img {
+  margin-top: 25%;
+}
+.gallery {
+  background-color: #222023;
+  color: #e4dfd1;
+  padding: 7%;
+}
+.gallery h2 {
+  padding-top: 15%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 7%;
+}
+.gallery p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 12%;
+}
+.gall-nav ol {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 8%;
+}
+.gall-nav li {
+  width: 20%;
+  border: 1px solid rgb(60, 57, 57);
+  list-style-type: none;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.gall-nav li a {
+  text-decoration: none;
+  color: #e4dfd1;
+}
+.sectionA {
+  display: flex;
+  flex-direction: column;
+}
+.sectionB {
+  display: flex;
+  flex-direction: column;
+}
+.page3 {
+  padding: 5%;
+  text-align: center;
+  background-color: white;
+}
+.page3 h2 {
+  margin: 7%;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+.page3 p {
+  font-size: 1.1rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.parts p {
+  margin: 0% 10%;
+  margin-bottom: 5%;
+}
+span {
+  color: #e68557;
+}
+.part-img {
+  margin: 2% 25%;
+  margin-top: 10%;
+}
+.page4 {
+  background-color: #222023;
+  color: white;
+  padding: 5%;
+}
+.page4 h3 {
+  padding: 15% 5%;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+.food {
+  margin: 7% 0%;
+}
+.food dt {
+  font-size: 1.7rem;
+  padding: 3% 0% 1% 0%;
+}
+.food dd {
+  text-transform: lowercase;
+}
+.page4 button {
+  background-color: #e68557;
+  padding: 5%;
+  color: white;
+  font-size: 1.2rem;
+  margin: 5% 15%;
+  text-transform: uppercase;
+}
+.page5 {
+  background-color: white;
+  padding: 5%;
+}
+.page5 h3 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10% 3% 7% 3%;
+}
+.page5 input,
+textarea {
+  display: block;
+  padding: 3%;
+  margin: 2%;
+}
+.page5 button {
+  padding: 3%;
+  background-color: #eceff0;
+  border: none;
+  margin-left: 10%;
+}
+.page6 {
+  background-color: #222023;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  color: #868288;
+}
+.page6 p {
+  padding: 1%;
+}
+.page6 div {
+  margin-top: 4%;
 }
 
-.tabA,
-.tabB,
-.tabC {
-  width: 33%;
-  padding: 3%;
-  margin: 0% 3%;
-  background-color: rgb(246, 241, 234);
-}
-.tabA h3,
-.tabB h3,
-.tabC h3 {
-  margin: 4% 1%;
-  margin-right: 50%;
-  padding: 10% 7%;
-  background-color: white;
-}
-.tabA p,
-.tabB p,
-.tabC p {
-  font-size: 1.2rem;
-  padding-top: 30%;
-  padding-bottom: 5%;
-}
-.tabA a,
-.tabB a,
-.tabC a {
-  text-decoration: none;
-  color: red;
-}
-.page-three {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 3% 0%;
-}
-.footA,
-.footB,
-.footC,
-.footD {
-  padding: 3%;
-  width: 25%;
-}
-.page-three h5 {
-  font-size: 1.5rem;
-  padding: 5% 0%;
-  text-transform: capitalize;
-}
-.footB a {
-  text-decoration: none;
-  color: red;
-}
-.footC a {
-  color: red;
-}
-.hr-line {
-  margin: 5% 20% 2% 20%;
-}
-footer {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10%;
-}
-@media (max-width: 770px) {
-  .page-one p {
-    margin: 0% 15%;
+@media (min-width: 770px) {
+  .secA {
+    margin: 0 46%;
   }
-  .sub-nav {
+  .dropbtn {
+    padding: 0.5%;
+  }
+  .dropbtn:hover {
+    cursor: pointer;
+    color: white;
+  }
+  .top-nav {
+    background-image: url(images/chocolate.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .images {
+    display: none;
+  }
+  .sections {
     display: flex;
-    flex-direction: column;
-    margin: 10%;
+    flex-direction: row;
   }
-  .sub-nav a {
-    width: 100%;
-    margin-bottom: 5%;
+  .page2 {
+    width: 50%;
+    padding: 2%;
+    padding-top: 18%;
+    border: 1px solid green;
   }
-  .page-two-head p {
-    margin: 0% 5%;
+  .sec-img {
+    width: 50%;
   }
-  .tab {
-    margin-top: 15%;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
+  .page2 h1 {
+    padding: 2%;
+    text-align: center;
+    font-size: 3.5rem;
   }
-  .tabA,
-  .tabB,
-  .tabC {
-    width: 100%;
-    margin: 5%;
-    width: 90%;
+  .topic-nav {
+    margin-right: 60%;
+    text-align: left;
+    margin-top: 8%;
   }
-  .page-three {
-    display: flex;
-    flex-direction: column;
+  .page2 p {
     text-align: center;
   }
-  .footA,
-  .footB,
-  .footC,
-  .footD {
-    width: 100%;
+  .sec-img {
+    margin-top: 0%;
+  }
+  .gallery p {
+    margin: 0% 17% 6% 17%;
+  }
+  .gall-nav {
+    margin: 0% 25%;
+  }
+  .gall-nav ol {
+    text-align: center;
+  }
+  .gall-nav li {
+    text-align: center;
+  }
+  .sectionA {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionA img {
+    width: 25%;
+    height: auto;
+  }
+  .sectionB {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionB img {
+    width: 25%;
+    height: auto;
+  }
+  .page3 h2 {
+    margin: 5%;
+    margin-bottom: 2%;
+  }
+  .page3 p {
+    margin: 0% 19%;
+    margin-bottom: 3%;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .parts {
+    width: 25%;
+  }
+  .page4 h3 {
+    padding: 2%;
+  }
+  .total {
+    display: flex;
+    flex-direction: row;
+  }
+  .left-side {
+    width: 50%;
+    text-align: center;
+  }
+  .right-side {
+    width: 50%;
+    text-align: center;
+  }
+  .food {
+    margin-top: 1%;
+  }
+  .page4 button {
+    padding: 2%;
+    margin-left: 40%;
+  }
+  .page5 {
+    margin: 1% 35% 35% 30%;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .page5 h3 {
+    padding-top: 1%;
+  }
+  .page6 {
+    border: 1px solid red;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+  }
+  .page6 div {
+    width: 33.3%;
+    margin: 0% 10%;
   }
 }
